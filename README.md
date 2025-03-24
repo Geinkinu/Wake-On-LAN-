@@ -1,27 +1,42 @@
-Wake-On-LAN via Gmail & IFTTT
+# 🚀 Wake-On-LAN via Gmail & IFTTT
 
-This Python script automates waking up a PC using Wake-On-LAN (WOL) triggered by Gmail and IFTTT. The script continuously checks a Gmail inbox for incoming emails labeled with a specific keyword ('TurnOnPC'). Upon detecting such an email, it sends a magic packet to the specified MAC address, powering on the target machine remotely.
+This Python script automates waking up a PC using **Wake-On-LAN (WOL)**, triggered by Gmail and IFTTT. The script continuously checks a Gmail inbox for incoming emails labeled with a specific keyword (**`TurnOnPC`**). Upon detecting such an email, it sends a magic packet to the specified MAC address, remotely powering on the target machine.
 
-Project Setup:
+---
 
-Gmail Filter:
+## 📌 Project Setup:
 
-Create a filter in your Gmail account to label incoming emails containing the keyword TurnOnPC.
+### ✉️ Gmail Filter:
 
-IFTTT Configuration:
+- Create a filter in your Gmail account to label incoming emails containing the keyword **`TurnOnPC`**.
 
-Set up an IFTTT applet to send an email to your designated Gmail account when triggered (e.g., via voice command, app button, or other integrations).
+### ⚙️ IFTTT Configuration:
 
-Server Execution:
+- Set up an [IFTTT](https://ifttt.com/) applet to send an email to your designated Gmail account when triggered (e.g., via voice command, app button, or other integrations).
 
-The script is designed to run indefinitely on a server or always-on device.
+### 🖥️ Server Execution:
 
-Executable Setup:
+- The script is designed to run indefinitely on a server or always-on device.
 
-Convert the script into an .exe file (using tools like PyInstaller) if you prefer running it as a startup program on Windows.
+### 📦 Executable Setup:
 
-Requirements:
+- Convert the script into an `.exe` file using **[PyInstaller](https://www.pyinstaller.org/)** if you prefer running it as a startup program on Windows.
 
-Python libraries: imaplib, email, wakeonlan, pystray, PIL (Pillow)
+## 🛠️ Requirements:
 
-Gmail account with App-specific password enabled
+- Python libraries:
+    - `imaplib`
+    - `email`
+    - `wakeonlan`
+    - `pystray`
+    - `PIL` (Pillow)
+
+- A Gmail account with **App-specific password enabled**.
+
+## 🔑 Configuration Setup:
+
+Edit your credentials within the script directly:
+
+```python
+IMAP_SERVER = 'imap.gmail.com'
+EMAIL_ACCOUNT = 'your_email@gmail.com'
