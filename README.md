@@ -1,6 +1,6 @@
 # 🚀 Wake-On-LAN via Gmail & IFTTT
 
-This Python script automates waking up a PC using **Wake-On-LAN (WOL)**, triggered by Gmail and IFTTT. The script continuously checks a Gmail inbox for incoming emails labeled with a specific keyword (**`TurnOnPC`**). Upon detecting such an email, it sends a magic packet to the specified MAC address, remotely powering on the target machine.
+This Python script automates waking up a PC using **Wake-On-LAN (WOL)**, triggered by Gmail and IFTTT. The script continuously checks a Gmail inbox for incoming emails labeled with a specific keyword (**`TurnOnPC`**). Upon detecting such an email, it sends a magic packet to the specified MAC address, remotely powering on the target machine. This elimates the need for your mobile device to share the same IP Address and thus can power on your PC from any part of the world.
 
 ---
 
